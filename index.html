@@ -5,14 +5,12 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="Xiaoxiao-Zou" content="CSE110-Lab2" />
+        <link href="main.css" rel="stylesheet" />
         <link rel="shortcut icon" href="https://brand.ucsd.edu/_images/logos-and-brand-elements/additional-campus-logos/ucsd-seal.svg" type="image/x-icon" />
     </head>
     <body>
         <header>
             <h1>Meeting Notes: CSE110 Lecture 1</h1>
-        </header>
-
-        <main>
             <nav  class="menu">
                 <ul>
                     <li><a href="#info">Information</a></li>
@@ -23,15 +21,23 @@
                     <li><a href="#ratings">After-Meeting Survey</a></li>
                 </ul>
             </nav>
+        </header>
+
+        <main>
 
             <section id="info">
                 <h2>Information</h2>
-                <b>Title:</b> SE Introdution meeting notes<br>
-                <b>Location:</b> Warren Lecture Hall 2001<br>
-                <b>Date:</b> Thursday, September 23, 2021 at <strong>5:00pm</strong><br>
-                <b>Note Taker:</b> Xiaoxiao Zou<br>
-                <b>Meeting Holder:</b> Thomas Allen Powell<br>
-                <img class="holder-picture" src="https://cse.ucsd.edu/sites/cse.ucsd.edu/files/faculty/powellF17-115x150.jpg" alt="Thomas A. Powell's photo">
+                
+                <div class="flex-container">
+                    <div><b>Title:</b> <br>SE Introdution meeting notes</div>
+                    <div><b>Location:</b><br> Warren Lecture Hall 2001</div>
+                    <div><b>Meeting Holder:</b><br> Thomas Allen Powell</div>
+                    <div><b>Date:</b> <br>Thursday, September 23, 2021 at <strong>5:00pm</strong></div>
+                    <div><b>Note Taker:</b><br> Xiaoxiao Zou</div>
+                </div>
+                <div  class="holder-picture" >
+                    <img src="https://cse.ucsd.edu/sites/cse.ucsd.edu/files/faculty/powellF17-115x150.jpg" alt="Thomas A. Powell's photo">
+                </div>
             </section>
 
             <div id="objective">
@@ -75,63 +81,66 @@
 
             <form id="ratings">
                 <h2>After-Meeting Survey</h2>
-                <fieldset>
-                  <legend><h3><i>What is your overall experience with this meeting?</i></h3></legend>
-              
-                  <input type="radio" id="sat1" name="satisfaction">
-                  <label for="sat1">1-Extremely Boring</label><br/>
-              
-                  <input type="radio" id="sat2" name="satisfaction">
-                  <label for="sat2">2-Somewhat Boring</label><br/>
-              
-                  <input type="radio" id="sat3" name="satisfaction">
-                  <label for="sat3">3-Neutral</label><br/>
-    
-                  <input type="radio" id="sat4" name="satisfaction">
-                  <label for="sat4">4-Somewhat Interesting</label><br/>
-    
-                  <input type="radio" id="sat5" name="satisfaction">
-                  <label for="sat5">5-Extremely Interesting</label><br>
+                <div class="grid">
+                    <div>
+                        <fieldset>
+                        <legend><h3><i>What is your overall experience with this meeting?</i></h3></legend>
                     
-                  <button type="button">Submit</button>
-                </fieldset>
+                        <input type="radio" id="sat1" name="satisfaction">
+                        <label for="sat1">1-Extremely Boring</label><br/>
+                    
+                        <input type="radio" id="sat2" name="satisfaction">
+                        <label for="sat2">2-Somewhat Boring</label><br/>
+                    
+                        <input type="radio" id="sat3" name="satisfaction">
+                        <label for="sat3">3-Neutral</label><br/>
+            
+                        <input type="radio" id="sat4" name="satisfaction">
+                        <label for="sat4">4-Somewhat Interesting</label><br/>
+            
+                        <input type="radio" id="sat5" name="satisfaction">
+                        <label for="sat5">5-Extremely Interesting</label><br>
+                            
+                        <button type="button">Submit</button>
+                        </fieldset>
+                    </div>
 
-                <hr>
-                <label for="check-attendance">Have you attend live meeting?</label>
-                <input list="attendance" id="check-attendance" name="check-attendance" />
-                <datalist id="attendance">
-                    <option value="Yes">
-                    <option value="No">
-                </datalist>
-                <button type="button">Submit</button><br />
+                    <div>
+                        <label for="check-attendance">Have you attend live meeting?</label>
+                        <input list="attendance" id="check-attendance" name="check-attendance" />
+                        <datalist id="attendance">
+                            <option value="Yes">
+                            <option value="No">
+                        </datalist>
+                        <button type="button">Submit</button><br />
+                    </div>
 
-                <hr>
-                <label for="percentage-select">What percenatge of the recording(audio or video) do you watch?</label>
-                <select name="meeting-perc" id="percentage-select">
-                    <option value="">--Please choose an option--</option>
-                    <option value="percenatge0">0%-10%</option>
-                    <option value="percenatge25">11%-30%</option>
-                    <option value="percenatge50">31%-50%</option>
-                    <option value="percenatge75">51%-80%</option>
-                    <option value="percentage100">80%-100%</option>
-                </select><button type="button">Submit</button><br />
+                    <div>
+                        <label for="percentage-select">What percenatge of the recording(audio or video) do you watch?</label>
+                        <select name="meeting-perc" id="percentage-select">
+                            <option value="">--Please choose an option--</option>
+                            <option value="percenatge0">0%-10%</option>
+                            <option value="percenatge25">11%-30%</option>
+                            <option value="percenatge50">31%-50%</option>
+                            <option value="percenatge75">51%-80%</option>
+                            <option value="percentage100">80%-100%</option>
+                        </select><button type="button">Submit</button><br />
+                    </div>
 
-                <hr>
-                <label for="comments"><i>Other Comments:</i></label><br>
-                <textarea id="comments" name="comments" rows="5" cols="33">Share your feelings after meeting...</textarea><br>
-                <button type="button">Submit</button><br />
-
+                    <div>
+                        <label for="comments"><i>Other Comments:</i></label><br>
+                        <textarea id="comments" name="comments" rows="5" cols="33">Share your feelings after meeting...</textarea><br>
+                        <button type="button">Submit</button><br />
+                    </div>
+                    
+                </div>
             </form>
             
         </main>
         
         <footer>
-            <hr />
             &copy;University of California San Diego, 2021
         </footer>
-
-        
-
                
     </body>
 </html>
