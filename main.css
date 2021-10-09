@@ -1,0 +1,131 @@
+ /* styling for the  whole page*/
+ * {
+    color:#023047;
+}
+html{
+    scroll-padding-top: 170px;
+}
+body{
+    font-family: Comic Sans MS, Comic Sans, Sans-Serif;
+}
+
+@media (max-width: 600px){
+    h1{
+        font-size: x-large !important; 
+    }
+    nav{
+        position:relative;
+        font-size: medium;
+    }
+    main{
+        font-size: small;
+    }
+}
+
+body>header{
+    background-color: white;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    bottom: 0px;
+}
+
+header h1{
+    font-size: 4em;
+    text-align:center;
+}
+
+nav{
+    text-align: center;
+    display: block;
+    margin-top:0px;
+    margin-bottom:0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav li{
+    padding: 0px 10px 0px 10px;
+    margin:0px 10px 0px 10px;
+    display: inline;
+    color: black; 
+    background-color: #8ecae6;
+    width: 70% ;
+    border-radius: 10%;
+    
+}
+
+nav li a:link, li a:visited{
+    text-decoration: none;
+    color: black; 
+}
+
+nav li:hover{
+    text-decoration: bold;
+    background-color:rgb(79, 185, 235);
+    transition: background-color 2s;
+}
+
+nav li a:active{
+    color:#ffb703;
+}
+
+h2{
+    color: #219ebc;
+}
+
+footer{
+    text-align: right;
+    background-color:#8ecae6;
+    margin-top: 1cm;
+    padding-top:20px;
+}
+
+div.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.flex-container div{
+    text-align: left;
+    width: 200px;
+    height: 50px;
+}
+.holder-picture img {
+    margin-top:30px;
+    position: static;
+    border-style:solid;
+    border-color:#fb860056;
+    border-width:2mm;
+    border-radius: 2vw;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-gap: 1rem;
+}
+.grid div{
+    background: rgb(255, 183, 3, 0.3);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    max-width: 400px;
+    min-width: 10px;
+}
+
+#ratings h2{
+    font-size: 3em;
+}
+audio ~ video{
+    border: 10px solid rgb(255, 183, 3, 0.7);
+}
+h2 + ol li{
+    color: #005f73;
+    font-weight: 8px;
+}
+button[type]{
+    background-color: #f8bf2d;
+}
